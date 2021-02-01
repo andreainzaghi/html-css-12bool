@@ -5,12 +5,15 @@
 }
 .col-1{
   width:calc((100%/12)*1);
+    background-color: orange;
 }
 .col-2{
   width:calc((100%/12)*2);
+    background-color: green;
 }
 .col-3{
   width:calc((100%/12)*3);
+
 }
 .col-4{
   width:calc((100%/12)*4);
@@ -20,12 +23,14 @@
 }
 .col-6{
   width:calc((100%/12)*6);
+  background-color: yellow;
 }
 .col-7{
   width:calc((100%/12)*7);
 }
 .col-8{
   width:calc((100%/12)*8);
+    background-color: lightblue;
 }
 .col-9{
   width:calc((100%/12)*9);
@@ -38,76 +43,25 @@
 }
 .col-12{
   width:calc((100%/12)*12);
-}
-.coll-1{
-  float:left;
-  height:100px;
-  background-color: lightgreen;
-  padding-top: 40px;
-  text-align:center;
-  border-left: 1px solid black;
-}
-.coll-1::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-.coll-12{
-  float:left;
-  height:100px;
   background-color: salmon;
-  padding-top: 40px;
-  text-align:center;
-  border-left: 1px solid black;
 }
-.coll-8{
+[class*="col-"] {
   float:left;
   height:100px;
-  background-color: yellow;
-  padding-top: 40px;
-  text-align:center;
-  border-left: 1px solid black;
-
-}
-.coll-2{
-  float:left;
-  height:100px;
-  background-color: lightblue;
   padding-top: 40px;
   text-align:center;
   border-left: 1px solid black;
 }
-.colonna-gialla::after{
-  content:"";
-  display:block;
-  clear:both;
+[class*="col-"]::after {
+content:"";
+display: block;
+clear: both;
 }
-.coll-1{
-  float:left;
-  height:100px;
-  background-color: orange;
-  padding-top: 40px;
-  text-align:center;
-  border-left: 1px solid black;
-}
-.colonna-arancione::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-.coll-6{
+.rosso{
   float:left;
   height:100px;
   background-color: green;
-  padding-top: 40px;
-  text-align:center;
-  border-left: 1px solid black;
-}
-.col-6i{
-  float:left;
-  height:100px;
-  background-color: green;
-    width:calc((100%/12)*6);
+  width:calc((100%/12)*6);
   text-align:center;
   border-left: 1px solid black;
 }
